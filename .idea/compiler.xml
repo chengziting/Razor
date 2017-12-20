@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Razor" />
+        <module name="Razor-model" />
         <module name="Razor-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Razor" target="1.5" />
+      <module name="Razor-model" target="1.5" />
       <module name="Razor-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>

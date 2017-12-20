@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Razor.iml" filepath="$PROJECT_DIR$/Razor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Razor-model/Razor-model.iml" filepath="$PROJECT_DIR$/Razor-model/Razor-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-web/Razor-web.iml" filepath="$PROJECT_DIR$/Razor-web/Razor-web.iml" />
     </modules>
   </component>
