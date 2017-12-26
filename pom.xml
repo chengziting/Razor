@@ -9,18 +9,24 @@
     <name>${project.groupId}:${project.artifactId}</name>
 
     <properties>
+        <rasorVersion>1.0.0.SNAPSHOT</rasorVersion>
         <springVersion>4.3.9.RELEASE</springVersion>
+        <hibernateVersion>5.0.6.Final</hibernateVersion>
 
     </properties>
 
     <modules>
+        <module>Razor-utils</module>
         <module>Razor-model</module>
+        <module>Razor-dao</module>
+        <module>Razor-service</module>
         <module>Razor-web</module>
     </modules>
 
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
@@ -44,6 +50,18 @@
                 <groupId>jstl</groupId>
                 <artifactId>jstl</artifactId>
                 <version>1.2</version>
+            </dependency>
+
+            <!--hibernate-->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernateVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernateVersion}</version>
             </dependency>
 
         </dependencies>
