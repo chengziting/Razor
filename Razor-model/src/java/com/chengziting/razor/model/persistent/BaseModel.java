@@ -1,5 +1,6 @@
 package com.chengziting.razor.model.persistent;
 
+import javax.persistence.Column;
 import java.util.Date;
 
 /**
@@ -12,7 +13,7 @@ public class BaseModel {
     public void setCreateDate(Date date){
         this.m_createDate = date;
     }
-    @Column("createdate")
+    @Column(name = "createdate")
     public Date getCreateDate(){
         return m_createDate;
     }
