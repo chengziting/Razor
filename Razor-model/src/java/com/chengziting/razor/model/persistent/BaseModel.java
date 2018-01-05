@@ -13,13 +13,14 @@ public class BaseModel {
     public void setCreateDate(Date date){
         this.m_createDate = date;
     }
-    @Column(name = "createdate")
+    @Column(name = "CreateDate")
     public Date getCreateDate(){
         return m_createDate;
     }
     public void setUpdateDate(Date date){
         this.m_updateDate = date;
     }
+    @Column(name="UpdateDate")
     public Date getUpdateDate(){
         return m_updateDate;
     }

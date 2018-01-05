@@ -17,6 +17,9 @@
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" />
+          <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.9" />
+          <element id="library" level="project" name="hibernate-validator-5.1.0.Final" />
         </element>
       </element>
     </root>
