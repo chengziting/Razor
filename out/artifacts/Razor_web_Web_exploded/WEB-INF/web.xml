@@ -7,14 +7,27 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
-
     <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        <listener-class>com.chengziting.razor.web.core.MyContextLoaderListener</listener-class>
     </listener>
+    
+    <!--load log4j-->
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>classpath:log4j.properties</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+    <!-- 为避免项目间冲突，定义唯一的 webAppRootKey -->
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>scheduleProject</param-value>
+    </context-param>
 
     <servlet>
         <servlet-name>dispatcher</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <servlet-class>com.chengziting.razor.web.core.MyDispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:dispatcher-servlet.xml</param-value>
@@ -25,5 +38,13 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    
+    <!--<error-page>-->
+        <!--<error-code>404</error-code>-->
+        <!--<location></location>-->
+    <!--</error-page>-->
+    <welcome-file-list>
+        <welcome-file>/account/login</welcome-file>
+    </welcome-file-list>
 
 </web-app>

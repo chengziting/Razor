@@ -21,5 +21,7 @@
     <orderEntry type="library" name="hibernate-validator-5.1.0.Final" level="project" />
     <orderEntry type="library" name="org.hibernate:hibernate-core:5.2.10.Final" level="project" />
     <orderEntry type="module" module-name="Razor-model" />
+    <orderEntry type="library" name="log4j-1.2.17" level="project" />
+    <orderEntry type="module" module-name="Razor-core" />
   </component>
 </module>

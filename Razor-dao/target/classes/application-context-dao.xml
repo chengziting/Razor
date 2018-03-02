@@ -7,8 +7,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.chengziting.razor.dao"/>
-    <context:annotation-config/>
+    <context:component-scan base-package="com.chengziting.razor"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -17,10 +16,11 @@
         <property name="password" value="123456"/>
     </bean>
 
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+    <bean id="sessionFactory" name="localSessionFactoryBean" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <array>
+                <value>com.chengziting.razor.model</value>
                 <value>com.chengziting.razor.dao</value>
             </array>
         </property>
@@ -33,20 +33,23 @@
         </property>
     </bean>
 
-    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
 
-    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="false"/>
-    <tx:advice transaction-manager="transactionManager">
-        <tx:attributes>
-            <tx:method name="save"/>
-            <tx:method name="delete"/>
-            <tx:method name="update"/>
-        </tx:attributes>
-    </tx:advice>
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!--<tx:advice id="transactionAdvice" transaction-manager="transactionManager">-->
+        <!--<tx:attributes>-->
+            <!--<tx:method name="save"/>-->
+            <!--<tx:method name="delete"/>-->
+            <!--<tx:method name="update"/>-->
+        <!--</tx:attributes>-->
+    <!--</tx:advice>-->
 </beans>

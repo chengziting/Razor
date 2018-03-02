@@ -7,6 +7,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Razor-web" />
           <element id="module-output" name="Razor" />
+          <element id="module-output" name="Razor-dao" />
+          <element id="module-output" name="Razor-model" />
+          <element id="module-output" name="Razor-service" />
+          <element id="module-output" name="Razor-Test" />
+          <element id="module-output" name="Razor-utils" />
+          <element id="module-output" name="Razor-core" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.9.RELEASE" />
@@ -20,6 +26,13 @@
           <element id="library" level="project" name="jstl:jstl:1.2" />
           <element id="library" level="project" name="mysql-connector-java-5.1.9" />
           <element id="library" level="project" name="hibernate-validator-5.1.0.Final" />
+          <element id="library" level="project" name="org.springframework:spring-webmvc:4.3.9.RELEASE" />
+          <element id="library" level="project" name="org.springframework:spring-orm:4.3.9.RELEASE" />
+          <element id="library" level="project" name="org.hibernate:hibernate-core:5.2.10.Final" />
+          <element id="library" level="project" name="log4j-1.2.17" />
+          <element id="library" level="project" name="JUnit-4.8.2" />
+          <element id="library" level="project" name="spring-test-3.2.0.M1" />
+          <element id="library" level="project" name="gson-2" />
         </element>
       </element>
     </root>

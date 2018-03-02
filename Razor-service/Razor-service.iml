@@ -13,5 +13,7 @@
     <orderEntry type="module" module-name="Razor-model" />
     <orderEntry type="module" module-name="Razor-dao" />
     <orderEntry type="library" name="org.springframework:spring-webmvc:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="org.hibernate:hibernate-core:5.2.10.Final" level="project" />
+    <orderEntry type="library" name="org.springframework:spring-orm:4.3.9.RELEASE" level="project" />
   </component>
 </module>

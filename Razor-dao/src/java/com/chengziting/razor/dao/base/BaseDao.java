@@ -1,61 +1,100 @@
 package com.chengziting.razor.dao.base;
 
+import com.chengziting.razor.core.SpringContextUtils;
+import com.chengziting.razor.core.exception.ServiceException;
 import com.chengziting.razor.model.persistent.BaseModel;
 import com.chengziting.razor.model.system.PagingModel;
+import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.hibernate5.HibernateTemplate;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
 import org.hibernate.Session;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by user on 2018-01-05.
  */
 @Transactional
+@Repository
 public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao<TEntity,TId>{
+    @Autowired
     private HibernateTemplate hibernateTemplate;
-    private JdbcTemplate      jdbcTemplate;
+//    @Autowired
+//    private JdbcTemplate      jdbcTemplate;
+//    @Autowired
+//    private SessionFactory sessionFactory;
+    private static Logger logger ;
 
-    @Autowired
-    public void setHibernateTemplate(HibernateTemplate template){
-        this.hibernateTemplate = template;
-    }
-    @Autowired
-    public void setJdbcTemplate(JdbcTemplate template){
-        this.jdbcTemplate = template;
+    public BaseDao(){
+        logger = Logger.getLogger(this.getClass());
     }
 
     public HibernateTemplate getHibernateTemplate(){
         return hibernateTemplate;
     }
-    public JdbcTemplate getJdbcTemplate(){
-        return jdbcTemplate;
-    }
+//    public JdbcTemplate getJdbcTemplate(){
+//        return jdbcTemplate;
+//    }
 
     protected Class<TEntity> getEntityType(){
         Class<TEntity> type = (Class<TEntity>)((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0];
         return type;
     }
 
-    protected synchronized Session getSession(){
+    protected Session getSession(){
         return getHibernateTemplate().getSessionFactory().getCurrentSession();
     }
 
-    public List<TEntity> getList() {
+    public TEntity get(TId tId) {
         Class<TEntity> type = getEntityType();
-        System.out.println(type.getName());
-        return getHibernateTemplate().loadAll(type);
+        return getSession().get(type,(Serializable)tId);
     }
 
-    public String save(TEntity var1) {
+    public TEntity getFirst(Map<String, Object> condition) {
+        Session session = getSession();
+//        try {
+        Class<TEntity> type = getEntityType();
+        Criteria criteria = session.createCriteria(type);
+        for (String key : condition.keySet()) {
+            Object value = condition.get(key);
+            criteria.add(Restrictions.eq(key, value));
+        }
+        List list = criteria.list();
+        if(list.size() > 0){
+            return (TEntity)list.get(0);
+        }
         return null;
+//        } finally {
+//            session.close();
+//        }
+    }
+
+    public List<TEntity> getList() {
+//        Class<TEntity> type = getEntityType();
+//        System.out.println(type.getName());
+//        return getHibernateTemplate().loadAll(type);
+        return null;
+    }
+
+    public TId save(TEntity var1) {
+        Session session = getSession();
+        logger.info("session hashCode="+session.hashCode());
+        TId id = (TId) session.save(var1);
+        return id;
     }
 
     public boolean save(List<TEntity> var1) {

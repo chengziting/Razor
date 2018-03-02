@@ -1,44 +1,46 @@
 package com.chengziting.razor.model.persistent;
 
+import com.chengziting.razor.model.system.GUIDGenerator;
 import com.sun.istack.internal.NotNull;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.util.Date;
+import javax.persistence.*;
 
 /**
  * Created by user on 2018-01-05.
  */
+@Entity
 @Table(name = "roles")
 public class Roles extends BaseModel {
-    private int m_id;
-    private String m_name;
-    private int m_status;
+    private String id;
+    private String name;
+    private int status;
 
-    public void setId(int id){
-        m_id = id;
+    public void setId(String id){
+        this.id = id;
     }
     @Id
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid",strategy = GUIDGenerator.GENERATOR_NAME)
     @Column(name = "Id")
-    public int getId(){
-        return m_id;
+    public String getId(){
+        return id;
     }
 
     public void setName(String name){
-        m_name = name;
+        this.name = name;
     }
     @Column(name = "Name")
     @NotNull
     public String getName(){
-        return m_name;
+        return name;
     }
 
     public void setStatus(int status){
-        m_status = status;
+        this.status = status;
     }
     @Column(name = "Status")
     public int getStatus(){
-        return m_status;
+        return status;
     }
 }

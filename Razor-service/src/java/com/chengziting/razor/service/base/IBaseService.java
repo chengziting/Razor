@@ -1,10 +1,31 @@
 package com.chengziting.razor.service.base;
 
-import com.chengziting.razor.dao.base.BaseDao;
 import com.chengziting.razor.model.persistent.BaseModel;
+import com.chengziting.razor.model.system.PagingModel;
+import org.hibernate.criterion.Criterion;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by user on 2018-01-05.
  */
-public interface IBaseService<TEntity extends BaseModel,TDao extends BaseDao<TEntity,TId>,TId> {
+@Component
+public interface IBaseService<TEntity extends BaseModel,TId> {
+    TEntity get(TId id);
+    TEntity getFirst(Map<String, Object> condition);
+
+    List<TEntity> getList();
+    TId save(TEntity var1);
+
+    boolean save(List<TEntity> var1);
+
+    boolean delete(TEntity var1);
+    boolean delete(TId id);
+
+    boolean delete(List<TEntity> var1);
+
+    boolean update(TEntity var1, TEntity var2);
+    PagingModel getList(int startIndex, int pagingSize, Criterion[] filter);
 }

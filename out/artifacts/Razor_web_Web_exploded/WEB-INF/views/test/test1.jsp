@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.chengziting.razor.model.persistent.Roles" %>
+<%@ page import="com.google.gson.Gson" %><%--
   Created by IntelliJ IDEA.
   User: czt
   Date: 2017/12/21
@@ -9,8 +10,14 @@
 <html>
 <head>
     <title>test1</title>
+    <%
+      Roles roles = (Roles)request.getAttribute("data");
+    %>
 </head>
 <body>
+    <p>
+        <%=new Gson().toJson(roles)%>
+    </p>
 
 </body>
 </html>

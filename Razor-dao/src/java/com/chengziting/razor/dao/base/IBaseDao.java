@@ -5,13 +5,16 @@ import com.chengziting.razor.model.system.PagingModel;
 import org.hibernate.criterion.Criterion;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by user on 2018-01-05.
  */
 public interface IBaseDao<TEntity extends BaseModel,TId> {
+    TEntity get(TId id);
+    TEntity getFirst(Map<String, Object> condition);
     List<TEntity> getList();
-    String save(TEntity var1);
+    TId save(TEntity var1);
 
     boolean save(List<TEntity> var1);
 
