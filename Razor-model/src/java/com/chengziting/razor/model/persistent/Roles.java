@@ -5,6 +5,7 @@ import com.sun.istack.internal.NotNull;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by user on 2018-01-05.
@@ -15,6 +16,7 @@ public class Roles extends BaseModel {
     private String id;
     private String name;
     private int status;
+    private List<UserInfo> users;
 
     public void setId(String id){
         this.id = id;
@@ -42,5 +44,15 @@ public class Roles extends BaseModel {
     @Column(name = "Status")
     public int getStatus(){
         return status;
+    }
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "userrole",joinColumns = {@JoinColumn(name = "RoleId")},inverseJoinColumns = {@JoinColumn(name = "UserId")})
+    public List<UserInfo> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<UserInfo> users) {
+        this.users = users;
     }
 }

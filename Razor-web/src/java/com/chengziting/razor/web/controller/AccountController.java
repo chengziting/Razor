@@ -2,8 +2,10 @@ package com.chengziting.razor.web.controller;
 
 import com.chengziting.razor.model.persistent.Roles;
 import com.chengziting.razor.model.persistent.UserInfo;
+import com.chengziting.razor.model.persistent.UserRole;
 import com.chengziting.razor.service.IRolesService;
 import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.service.IUserRoleService;
 import com.chengziting.razor.utils.common.CookieUtils;
 import com.chengziting.razor.utils.common.IGlobalKey;
 import com.chengziting.razor.utils.common.SymmetricEncoder;
@@ -26,6 +28,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -39,6 +42,8 @@ public class AccountController {
     private IRolesService rolesService;
     @Autowired
     private IUserInfoService userInfoService;
+    @Autowired
+    private IUserRoleService userRoleService;
 
     @RequestMapping("login")
     public ModelAndView login(){
@@ -51,12 +56,22 @@ public class AccountController {
         ViewModel vm = new ViewModel();
         vm.setTitle("Register");
         mv.addObject("viewdata",vm);
+        List<UserInfo> userInfoList = userInfoService.getList();
+        List<Roles> rolesList = rolesService.getList();
+        if(userInfoList.size()>0){
+            UserInfo userInfo = userInfoList.get(0);
+            if(userInfo.getRoles().size() > 0){
+                Roles role = userInfo.getRoles().get(0);
+                String name = role.getName();
+            }
+        }
+
         return mv;
     }
 
     @RequestMapping(value = "doRegister",method = RequestMethod.POST)
     @ResponseBody
-    @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional
     public String doRegister(@RequestBody RegisterModel model, HttpServletResponse response/*, HttpServletRequest request*/) throws ServiceException {
         ResultModel<String> rm = new ResultModel<String>();
         if(model.hasError()){
@@ -83,10 +98,11 @@ public class AccountController {
             }catch (Exception ex){
                 rm.setMessage("Register error");
                 rm.setData(ex.getMessage());
-                throw new RuntimeException();
+                throw new ServiceException();
             }
         }
 
         return new Gson().toJson(rm);
     }
+
 }

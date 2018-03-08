@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="JUnit-4.8.2">
+  <library name="mockito-core-2.5.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/JUnit-4.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mockito-core-2.5.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

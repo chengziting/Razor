@@ -1,0 +1,932 @@
+2018-03-08 15:03:23  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13d0772, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67f029, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1a20f67, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1c758ac]
+2018-03-08 15:03:23  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:03:23  [ main:146 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:03:23  [ main:343 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:03:23  [ main:458 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:03:23  [ main:535 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@181ce95: startup date [Thu Mar 08 15:03:23 CST 2018]; root of context hierarchy
+2018-03-08 15:03:24  [ main:843 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:03:24  [ main:1061 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:03:24  [ main:1062 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:03:24  [ main:1131 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:03:24  [ main:1397 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:03:24  [ main:1428 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:03:24  [ main:1657 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:03:25  [ main:2189 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@11984c3] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:03:25  [ main:2334 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:03:25  [ main:2335 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:03:25  [ main:2335 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:03:25  [ main:2336 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:03:25  [ main:2436 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@181ce95: startup date [Thu Mar 08 15:03:23 CST 2018]; root of context hierarchy
+2018-03-08 15:03:25  [ main:2471 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@181ce95: startup date [Thu Mar 08 15:03:23 CST 2018]; root of context hierarchy
+2018-03-08 15:03:25  [ main:2549 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:03:25  [ main:2551 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:03:25  [ main:2552 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:03:25  [ main:2554 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@181ce95: startup date [Thu Mar 08 15:03:23 CST 2018]; root of context hierarchy
+2018-03-08 15:03:25  [ main:2646 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:03:25  [ main:2646 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:03:26  [ main:2696 ] - [ INFO ]  FrameworkServlet '': initialization completed in 50 ms
+2018-03-08 15:03:26  [ main:2828 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:03:26  [ main:2893 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:03:26  [ Thread-2:2930 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@181ce95: startup date [Thu Mar 08 15:03:23 CST 2018]; root of context hierarchy
+2018-03-08 15:05:26  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:05:26  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:05:26  [ main:154 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:05:27  [ main:339 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:05:27  [ main:454 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:05:27  [ main:529 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:05:27 CST 2018]; root of context hierarchy
+2018-03-08 15:05:27  [ main:838 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:05:27  [ main:1004 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:05:27  [ main:1005 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:05:27  [ main:1071 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:05:28  [ main:1338 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:05:28  [ main:1369 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:05:28  [ main:1598 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:05:28  [ main:2137 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@13430a7] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:05:29  [ main:2270 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:05:29  [ main:2271 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:05:29  [ main:2271 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:05:29  [ main:2272 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:05:29  [ main:2375 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:05:27 CST 2018]; root of context hierarchy
+2018-03-08 15:05:29  [ main:2415 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:05:27 CST 2018]; root of context hierarchy
+2018-03-08 15:05:29  [ main:2503 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:05:29  [ main:2505 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:05:29  [ main:2506 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:05:29  [ main:2508 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:05:27 CST 2018]; root of context hierarchy
+2018-03-08 15:05:29  [ main:2636 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:05:29  [ main:2636 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:05:29  [ main:2654 ] - [ INFO ]  FrameworkServlet '': initialization completed in 18 ms
+2018-03-08 15:05:29  [ main:2784 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:05:29  [ main:2857 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:05:54  [ main:28255 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:06:00  [ main:34052 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:06:00  [ Thread-2:34066 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:05:27 CST 2018]; root of context hierarchy
+2018-03-08 15:06:26  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:06:26  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:06:26  [ main:145 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:06:26  [ main:324 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:06:26  [ main:438 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:06:26  [ main:514 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:06:26 CST 2018]; root of context hierarchy
+2018-03-08 15:06:26  [ main:842 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:06:27  [ main:1010 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:06:27  [ main:1011 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:06:27  [ main:1078 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:06:27  [ main:1340 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:06:27  [ main:1370 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:06:27  [ main:1598 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:06:28  [ main:2122 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@13430a7] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:06:28  [ main:2252 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:06:28  [ main:2253 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:06:28  [ main:2253 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:06:28  [ main:2253 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:06:28  [ main:2348 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:06:26 CST 2018]; root of context hierarchy
+2018-03-08 15:06:28  [ main:2383 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:06:26 CST 2018]; root of context hierarchy
+2018-03-08 15:06:28  [ main:2468 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:06:28  [ main:2470 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:06:28  [ main:2471 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:06:28  [ main:2474 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:06:26 CST 2018]; root of context hierarchy
+2018-03-08 15:06:28  [ main:2570 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:06:28  [ main:2570 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:06:28  [ main:2621 ] - [ INFO ]  FrameworkServlet '': initialization completed in 51 ms
+2018-03-08 15:06:28  [ main:2755 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:06:28  [ main:2820 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:06:28  [ Thread-2:2854 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:06:26 CST 2018]; root of context hierarchy
+2018-03-08 15:08:10  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:08:10  [ main:89 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:08:10 CST 2018]; root of context hierarchy
+2018-03-08 15:08:10  [ main:238 ] - [ ERROR ]  Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f] to prepare test instance [com.chengziting.razor.test.testService@5232e9]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.chengziting.razor.test.testService': Unsatisfied dependency expressed through field 'userInfoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chengziting.razor.service.IUserInfoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chengziting.razor.service.IUserInfoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 27 more
+2018-03-08 15:08:10  [ org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:234):org.springframework.test.context.TestContextManager:main:238 ] - [ ERROR ]  Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f] to prepare test instance [com.chengziting.razor.test.testService@5232e9]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.chengziting.razor.test.testService': Unsatisfied dependency expressed through field 'userInfoService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chengziting.razor.service.IUserInfoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chengziting.razor.service.IUserInfoService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 27 more
+2018-03-08 15:08:10  [ Thread-0:253 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:08:10 CST 2018]; root of context hierarchy
+2018-03-08 15:10:12  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:10:12  [ main:67 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:10:12  [ main:147 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:10:12  [ main:159 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:10:12  [ main:168 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:10:12  [ main:352 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:10:13  [ main:471 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:10:13  [ main:552 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:13 CST 2018]; root of context hierarchy
+2018-03-08 15:10:13  [ main:862 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:10:13  [ main:1031 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:10:13  [ main:1035 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:10:13  [ main:1113 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:10:13  [ main:1385 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:10:13  [ main:1416 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:10:14  [ main:1649 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:10:14  [ main:2172 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:10:14  [ main:2303 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:10:14  [ main:2303 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:10:14  [ main:2304 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:10:14  [ main:2304 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:10:14  [ main:2397 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:13 CST 2018]; root of context hierarchy
+2018-03-08 15:10:14  [ main:2431 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:13 CST 2018]; root of context hierarchy
+2018-03-08 15:10:15  [ main:2507 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:10:15  [ main:2508 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:10:15  [ main:2510 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:10:15  [ main:2511 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:13 CST 2018]; root of context hierarchy
+2018-03-08 15:10:15  [ main:2631 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:10:15  [ main:2631 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:10:15  [ main:2647 ] - [ INFO ]  FrameworkServlet '': initialization completed in 16 ms
+2018-03-08 15:10:15  [ main:2772 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:10:15  [ main:2842 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:10:15  [ Thread-2:2870 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:13 CST 2018]; root of context hierarchy
+2018-03-08 15:10:20  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:10:20  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:10:20  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:10:20  [ main:160 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:10:20  [ main:169 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:10:20  [ main:345 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:10:20  [ main:455 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:10:20  [ main:530 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:20 CST 2018]; root of context hierarchy
+2018-03-08 15:10:21  [ main:843 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:10:21  [ main:1017 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:10:21  [ main:1022 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:10:21  [ main:1090 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:10:21  [ main:1351 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:10:21  [ main:1381 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:10:21  [ main:1610 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:10:22  [ main:2124 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:10:22  [ main:2254 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:10:22  [ main:2255 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:10:22  [ main:2255 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:10:22  [ main:2256 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:10:22  [ main:2353 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:20 CST 2018]; root of context hierarchy
+2018-03-08 15:10:22  [ main:2394 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:20 CST 2018]; root of context hierarchy
+2018-03-08 15:10:22  [ main:2478 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:10:22  [ main:2480 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:10:22  [ main:2481 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:10:22  [ main:2482 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:20 CST 2018]; root of context hierarchy
+2018-03-08 15:10:22  [ main:2607 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:10:22  [ main:2607 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:10:22  [ main:2626 ] - [ INFO ]  FrameworkServlet '': initialization completed in 19 ms
+2018-03-08 15:10:23  [ main:2754 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:10:23  [ main:2822 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:10:23  [ Thread-2:2849 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:10:20 CST 2018]; root of context hierarchy
+2018-03-08 15:12:45  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:12:45  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:12:45  [ main:152 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:12:45  [ main:164 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:12:45  [ main:173 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:12:45  [ main:354 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:12:45  [ main:464 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:12:45  [ main:539 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:12:45 CST 2018]; root of context hierarchy
+2018-03-08 15:12:46  [ main:855 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:12:46  [ main:1028 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:12:46  [ main:1033 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:12:46  [ main:1101 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:12:46  [ main:1364 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:12:46  [ main:1395 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:12:46  [ main:1646 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:12:47  [ main:2179 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:12:47  [ main:2310 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:12:47  [ main:2311 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:12:47  [ main:2311 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:12:47  [ main:2312 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:12:47  [ main:2405 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:12:45 CST 2018]; root of context hierarchy
+2018-03-08 15:12:47  [ main:2439 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:12:45 CST 2018]; root of context hierarchy
+2018-03-08 15:12:47  [ main:2515 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:12:47  [ main:2517 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:12:47  [ main:2518 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:12:47  [ main:2520 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:12:45 CST 2018]; root of context hierarchy
+2018-03-08 15:12:47  [ main:2611 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:12:47  [ main:2611 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:12:47  [ main:2658 ] - [ INFO ]  FrameworkServlet '': initialization completed in 47 ms
+2018-03-08 15:12:47  [ main:2787 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:12:48  [ main:2848 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:12:48  [ Thread-2:2881 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:12:45 CST 2018]; root of context hierarchy
+2018-03-08 15:13:58  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:13:58  [ main:76 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:13:58  [ main:165 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:13:58  [ main:177 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:13:58  [ main:186 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:13:59  [ main:368 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:13:59  [ main:478 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:13:59  [ main:554 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:13:59 CST 2018]; root of context hierarchy
+2018-03-08 15:13:59  [ main:865 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:13:59  [ main:1035 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:13:59  [ main:1039 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:13:59  [ main:1109 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:14:00  [ main:1373 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:14:00  [ main:1404 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:14:00  [ main:1634 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:14:00  [ main:2157 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:14:01  [ main:2290 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:14:01  [ main:2291 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:14:01  [ main:2291 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:14:01  [ main:2291 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:14:01  [ main:2385 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:13:59 CST 2018]; root of context hierarchy
+2018-03-08 15:14:01  [ main:2419 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:13:59 CST 2018]; root of context hierarchy
+2018-03-08 15:14:01  [ main:2495 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:14:01  [ main:2497 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:14:01  [ main:2498 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:14:01  [ main:2500 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:13:59 CST 2018]; root of context hierarchy
+2018-03-08 15:14:01  [ main:2617 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:14:01  [ main:2617 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:14:01  [ main:2634 ] - [ INFO ]  FrameworkServlet '': initialization completed in 17 ms
+2018-03-08 15:14:01  [ main:2760 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:14:01  [ main:2828 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:14:01  [ Thread-2:2853 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:13:59 CST 2018]; root of context hierarchy
+2018-03-08 15:14:24  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:14:24  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:14:24  [ main:153 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:14:24  [ main:165 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:14:24  [ main:174 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:14:24  [ main:363 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:14:24  [ main:483 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:14:25  [ main:568 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:14:25 CST 2018]; root of context hierarchy
+2018-03-08 15:14:25  [ main:887 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:14:25  [ main:1059 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:14:25  [ main:1064 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:14:25  [ main:1133 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:14:25  [ main:1406 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:14:25  [ main:1438 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:14:26  [ main:1679 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:14:26  [ main:2207 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:14:26  [ main:2345 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:14:26  [ main:2346 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:14:26  [ main:2346 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:14:26  [ main:2347 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:14:26  [ main:2445 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:14:25 CST 2018]; root of context hierarchy
+2018-03-08 15:14:26  [ main:2479 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:14:25 CST 2018]; root of context hierarchy
+2018-03-08 15:14:27  [ main:2558 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:14:27  [ main:2560 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:14:27  [ main:2561 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:14:27  [ main:2563 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:14:25 CST 2018]; root of context hierarchy
+2018-03-08 15:14:27  [ main:2682 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:14:27  [ main:2682 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:14:27  [ main:2700 ] - [ INFO ]  FrameworkServlet '': initialization completed in 18 ms
+2018-03-08 15:14:27  [ main:2827 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:14:27  [ main:2896 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:14:27  [ Thread-2:2922 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:14:25 CST 2018]; root of context hierarchy
+2018-03-08 15:19:34  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9cd3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e39c73, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cd705f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1225652]
+2018-03-08 15:19:34  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:19:34  [ main:151 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:19:34  [ main:163 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:19:34  [ main:172 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:19:35  [ main:351 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:19:35  [ main:464 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:19:35  [ main:544 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:19:35 CST 2018]; root of context hierarchy
+2018-03-08 15:19:35  [ main:860 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:19:35  [ main:1026 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:19:35  [ main:1031 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:19:35  [ main:1099 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:19:36  [ main:1357 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:19:36  [ main:1387 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:19:36  [ main:1616 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:19:36  [ main:2126 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1491fee] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:19:36  [ main:2258 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:19:36  [ main:2259 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:19:36  [ main:2259 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:19:36  [ main:2259 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:19:37  [ main:2354 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:19:35 CST 2018]; root of context hierarchy
+2018-03-08 15:19:37  [ main:2389 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:19:35 CST 2018]; root of context hierarchy
+2018-03-08 15:19:37  [ main:2464 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:19:37  [ main:2466 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:19:37  [ main:2467 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:19:37  [ main:2469 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:19:35 CST 2018]; root of context hierarchy
+2018-03-08 15:19:37  [ main:2586 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:19:37  [ main:2586 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:19:37  [ main:2606 ] - [ INFO ]  FrameworkServlet '': initialization completed in 19 ms
+2018-03-08 15:19:46  [ main:11569 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:19:46  [ main:11636 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:19:46  [ Thread-2:11665 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1afeb11: startup date [Thu Mar 08 15:19:35 CST 2018]; root of context hierarchy
+2018-03-08 15:29:13  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:29:13  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:29:13  [ main:152 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:29:13  [ main:164 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:29:13  [ main:173 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:29:13  [ main:363 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:29:13  [ main:486 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:29:13  [ main:571 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:13 CST 2018]; root of context hierarchy
+2018-03-08 15:29:13  [ main:891 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:29:14  [ main:1059 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:29:14  [ main:1060 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:29:14  [ main:1128 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:29:14  [ main:1393 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:29:14  [ main:1424 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:29:14  [ main:1657 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:29:15  [ main:2189 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@f57b3d] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:29:15  [ main:2322 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:29:15  [ main:2322 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:29:15  [ main:2323 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:29:15  [ main:2323 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:29:15  [ main:2324 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:29:15  [ main:2422 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:13 CST 2018]; root of context hierarchy
+2018-03-08 15:29:15  [ main:2457 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:13 CST 2018]; root of context hierarchy
+2018-03-08 15:29:15  [ main:2533 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:29:15  [ main:2535 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:29:15  [ main:2536 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:29:15  [ main:2537 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:13 CST 2018]; root of context hierarchy
+2018-03-08 15:29:15  [ main:2661 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:29:15  [ main:2661 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:29:15  [ main:2678 ] - [ INFO ]  FrameworkServlet '': initialization completed in 17 ms
+2018-03-08 15:29:15  [ main:2792 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:29:15  [ Thread-2:2944 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:13 CST 2018]; root of context hierarchy
+2018-03-08 15:29:29  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:29:30  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:29:30  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:29:30  [ main:159 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:29:30  [ main:168 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:29:30  [ main:369 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:29:30  [ main:491 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:29:30  [ main:576 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:30 CST 2018]; root of context hierarchy
+2018-03-08 15:29:30  [ main:891 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:29:31  [ main:1060 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:29:31  [ main:1061 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:29:31  [ main:1129 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:29:31  [ main:1390 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:29:31  [ main:1421 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:29:31  [ main:1652 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:29:32  [ main:2171 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@f57b3d] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:29:32  [ main:2307 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:29:32  [ main:2307 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:29:32  [ main:2308 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:29:32  [ main:2308 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:29:32  [ main:2309 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:29:32  [ main:2410 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:30 CST 2018]; root of context hierarchy
+2018-03-08 15:29:32  [ main:2447 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:30 CST 2018]; root of context hierarchy
+2018-03-08 15:29:32  [ main:2526 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:29:32  [ main:2528 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:29:32  [ main:2529 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:29:32  [ main:2531 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:29:30 CST 2018]; root of context hierarchy
+2018-03-08 15:29:32  [ main:2626 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:29:32  [ main:2626 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:29:32  [ main:2677 ] - [ INFO ]  FrameworkServlet '': initialization completed in 51 ms
+2018-03-08 15:29:32  [ main:2785 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:32:10  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:32:10  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:32:10  [ main:154 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:32:10  [ main:166 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:32:10  [ main:175 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:32:10  [ main:368 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:32:11  [ main:496 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:32:11  [ main:583 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:32:11 CST 2018]; root of context hierarchy
+2018-03-08 15:32:11  [ main:904 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:32:11  [ main:1074 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:32:11  [ main:1075 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:32:11  [ main:1143 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:32:12  [ main:1403 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:32:12  [ main:1434 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:32:12  [ main:1666 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:32:12  [ main:2203 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@f57b3d] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:32:12  [ main:2337 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:32:12  [ main:2338 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:32:12  [ main:2338 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:32:12  [ main:2339 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:32:12  [ main:2339 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:32:13  [ main:2441 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:32:11 CST 2018]; root of context hierarchy
+2018-03-08 15:32:13  [ main:2477 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:32:11 CST 2018]; root of context hierarchy
+2018-03-08 15:32:13  [ main:2557 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:32:13  [ main:2559 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:32:13  [ main:2560 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:32:13  [ main:2562 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:32:11 CST 2018]; root of context hierarchy
+2018-03-08 15:32:13  [ main:2688 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:32:13  [ main:2688 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:32:13  [ main:2706 ] - [ INFO ]  FrameworkServlet '': initialization completed in 17 ms
+2018-03-08 15:32:13  [ main:2820 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:50:24  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:50:24  [ main:70 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:50:24  [ main:149 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:50:24  [ main:161 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:50:24  [ main:170 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:50:25  [ main:366 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:50:25  [ main:488 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:50:25  [ main:576 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:50:25 CST 2018]; root of context hierarchy
+2018-03-08 15:50:25  [ main:894 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:50:25  [ main:1058 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:50:25  [ main:1060 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:50:25  [ main:1132 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:50:26  [ main:1390 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:50:26  [ main:1420 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:50:26  [ main:1648 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:50:26  [ main:2169 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@e3db41] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:50:27  [ main:2310 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:50:27  [ main:2311 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:50:27  [ main:2311 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:50:27  [ main:2312 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:50:27  [ main:2312 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:50:27  [ main:2412 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:50:25 CST 2018]; root of context hierarchy
+2018-03-08 15:50:27  [ main:2446 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:50:25 CST 2018]; root of context hierarchy
+2018-03-08 15:50:27  [ main:2521 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:50:27  [ main:2523 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:50:27  [ main:2524 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:50:27  [ main:2526 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:50:25 CST 2018]; root of context hierarchy
+2018-03-08 15:50:27  [ main:2645 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:50:27  [ main:2645 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:50:27  [ main:2665 ] - [ INFO ]  FrameworkServlet '': initialization completed in 20 ms
+2018-03-08 15:50:27  [ main:2776 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:51:08  [ main:1 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:51:08  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:51:08  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:51:08  [ main:159 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:51:08  [ main:168 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:51:08  [ main:362 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:51:08  [ main:487 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:51:08  [ main:572 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:08 CST 2018]; root of context hierarchy
+2018-03-08 15:51:09  [ main:884 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:51:09  [ main:1050 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:51:09  [ main:1051 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:51:09  [ main:1122 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:51:09  [ main:1383 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:51:09  [ main:1413 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:51:09  [ main:1644 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:51:10  [ main:2160 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@e3db41] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:51:10  [ main:2290 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:51:10  [ main:2291 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:51:10  [ main:2291 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:51:10  [ main:2291 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:51:10  [ main:2292 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:51:10  [ main:2393 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:08 CST 2018]; root of context hierarchy
+2018-03-08 15:51:10  [ main:2427 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:08 CST 2018]; root of context hierarchy
+2018-03-08 15:51:10  [ main:2507 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:51:10  [ main:2508 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:51:10  [ main:2510 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:51:10  [ main:2511 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:08 CST 2018]; root of context hierarchy
+2018-03-08 15:51:10  [ main:2631 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:51:10  [ main:2632 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:51:11  [ main:2652 ] - [ INFO ]  FrameworkServlet '': initialization completed in 20 ms
+2018-03-08 15:51:11  [ main:2762 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:51:21  [ Thread-2:13622 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:08 CST 2018]; root of context hierarchy
+2018-03-08 15:51:58  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:51:58  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:51:58  [ main:149 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:51:58  [ main:160 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:51:58  [ main:169 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:51:58  [ main:368 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:51:59  [ main:499 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:51:59  [ main:593 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:59 CST 2018]; root of context hierarchy
+2018-03-08 15:51:59  [ main:922 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:51:59  [ main:1101 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:51:59  [ main:1102 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:51:59  [ main:1174 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:51:59  [ main:1435 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:51:59  [ main:1465 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:52:00  [ main:1690 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:52:00  [ main:2204 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@e3db41] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:52:00  [ main:2338 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:52:00  [ main:2339 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:52:00  [ main:2339 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:52:00  [ main:2340 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 15:52:00  [ main:2340 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:52:00  [ main:2437 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:59 CST 2018]; root of context hierarchy
+2018-03-08 15:52:00  [ main:2471 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:59 CST 2018]; root of context hierarchy
+2018-03-08 15:52:01  [ main:2548 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:52:01  [ main:2550 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:52:01  [ main:2551 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:52:01  [ main:2553 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:59 CST 2018]; root of context hierarchy
+2018-03-08 15:52:01  [ main:2674 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:52:01  [ main:2674 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:52:01  [ main:2695 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 15:52:01  [ main:2804 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 15:52:01  [ Thread-2:2902 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:51:59 CST 2018]; root of context hierarchy
+2018-03-08 15:53:04  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e39c73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@cd705f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1225652, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14f0d9c]
+2018-03-08 15:53:04  [ main:67 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:53:04  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:53:04  [ main:160 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:53:04  [ main:168 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:53:04  [ main:367 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:53:05  [ main:498 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:53:05  [ main:594 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:53:05 CST 2018]; root of context hierarchy
+2018-03-08 15:53:05  [ main:923 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:53:05  [ main:1091 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:53:05  [ main:1092 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:53:05  [ main:1163 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:53:05  [ main:1426 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:53:05  [ main:1456 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:53:06  [ main:1682 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:53:06  [ main:2200 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@e3db41] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:53:06  [ main:2332 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:53:06  [ main:2332 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:53:06  [ main:2333 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:53:06  [ main:2333 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:53:06  [ main:2334 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:53:06  [ main:2431 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:53:05 CST 2018]; root of context hierarchy
+2018-03-08 15:53:06  [ main:2466 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:53:05 CST 2018]; root of context hierarchy
+2018-03-08 15:53:07  [ main:2542 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:53:07  [ main:2544 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:53:07  [ main:2545 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:53:07  [ main:2547 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:53:05 CST 2018]; root of context hierarchy
+2018-03-08 15:53:07  [ main:2672 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:53:07  [ main:2672 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:53:07  [ main:2694 ] - [ INFO ]  FrameworkServlet '': initialization completed in 22 ms
+2018-03-08 15:53:07  [ main:2740 ] - [ WARN ]  Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:53:07  [ Thread-2:2753 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@15aebb0: startup date [Thu Mar 08 15:53:05 CST 2018]; root of context hierarchy
+2018-03-08 15:56:45  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 15:56:45  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:56:45  [ main:145 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:56:45  [ main:157 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:56:45  [ main:166 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:56:45  [ main:363 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:56:45  [ main:486 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:56:45  [ main:577 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:56:45 CST 2018]; root of context hierarchy
+2018-03-08 15:56:46  [ main:916 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:56:46  [ main:1084 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:56:46  [ main:1086 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:56:46  [ main:1155 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:56:46  [ main:1408 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:56:46  [ main:1438 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:56:46  [ main:1672 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:56:47  [ main:2312 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:56:47  [ main:2446 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:56:47  [ main:2447 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:56:47  [ main:2447 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:56:47  [ main:2447 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:56:47  [ main:2448 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:56:47  [ main:2546 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:56:45 CST 2018]; root of context hierarchy
+2018-03-08 15:56:47  [ main:2581 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:56:45 CST 2018]; root of context hierarchy
+2018-03-08 15:56:47  [ main:2656 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:56:47  [ main:2658 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:56:47  [ main:2659 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:56:47  [ main:2661 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:56:45 CST 2018]; root of context hierarchy
+2018-03-08 15:56:47  [ main:2778 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:56:47  [ main:2778 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:56:47  [ main:2799 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 15:56:47  [ main:2831 ] - [ WARN ]  Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:56:47  [ Thread-2:2843 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:56:45 CST 2018]; root of context hierarchy
+2018-03-08 15:59:33  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 15:59:33  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 15:59:33  [ main:148 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 15:59:33  [ main:162 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 15:59:33  [ main:172 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:59:34  [ main:400 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 15:59:34  [ main:530 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 15:59:34  [ main:622 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:59:34 CST 2018]; root of context hierarchy
+2018-03-08 15:59:34  [ main:963 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 15:59:34  [ main:1142 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 15:59:34  [ main:1143 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 15:59:35  [ main:1223 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 15:59:35  [ main:1496 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 15:59:35  [ main:1527 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 15:59:35  [ main:1760 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 15:59:36  [ main:2280 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 15:59:36  [ main:2415 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 15:59:36  [ main:2416 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 15:59:36  [ main:2416 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 15:59:36  [ main:2417 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:59:36  [ main:2417 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 15:59:36  [ main:2517 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:59:34 CST 2018]; root of context hierarchy
+2018-03-08 15:59:36  [ main:2552 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:59:34 CST 2018]; root of context hierarchy
+2018-03-08 15:59:36  [ main:2628 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 15:59:36  [ main:2629 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 15:59:36  [ main:2631 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 15:59:36  [ main:2632 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:59:34 CST 2018]; root of context hierarchy
+2018-03-08 15:59:36  [ main:2752 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 15:59:36  [ main:2752 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 15:59:36  [ main:2774 ] - [ INFO ]  FrameworkServlet '': initialization completed in 22 ms
+2018-03-08 15:59:36  [ main:2807 ] - [ WARN ]  Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-03-08 15:59:36  [ Thread-2:2819 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 15:59:34 CST 2018]; root of context hierarchy
+2018-03-08 16:01:32  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:01:32  [ main:70 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:01:33  [ main:151 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:01:33  [ main:163 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:01:33  [ main:173 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:01:33  [ main:369 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:01:33  [ main:491 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:01:33  [ main:577 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:33 CST 2018]; root of context hierarchy
+2018-03-08 16:01:33  [ main:913 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:01:34  [ main:1077 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:01:34  [ main:1078 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:01:34  [ main:1150 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:01:34  [ main:1405 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:01:34  [ main:1435 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:01:34  [ main:1664 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:01:35  [ main:2173 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:01:35  [ main:2302 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:01:35  [ main:2303 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:01:35  [ main:2303 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:01:35  [ main:2304 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:01:35  [ main:2304 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:01:35  [ main:2402 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:33 CST 2018]; root of context hierarchy
+2018-03-08 16:01:35  [ main:2436 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:33 CST 2018]; root of context hierarchy
+2018-03-08 16:01:35  [ main:2512 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:01:35  [ main:2514 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:01:35  [ main:2515 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:01:35  [ main:2517 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:33 CST 2018]; root of context hierarchy
+2018-03-08 16:01:35  [ main:2637 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:01:35  [ main:2637 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:01:35  [ main:2658 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 16:01:35  [ main:2767 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:01:37  [ Thread-2:4884 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:33 CST 2018]; root of context hierarchy
+2018-03-08 16:01:59  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:01:59  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:01:59  [ main:144 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:01:59  [ main:156 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:01:59  [ main:165 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:01:59  [ main:359 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:01:59  [ main:480 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:01:59  [ main:568 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:59 CST 2018]; root of context hierarchy
+2018-03-08 16:02:00  [ main:895 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:02:00  [ main:1057 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:02:00  [ main:1058 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:02:00  [ main:1128 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:02:00  [ main:1383 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:02:00  [ main:1413 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:02:00  [ main:1644 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:02:01  [ main:2153 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:02:01  [ main:2283 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:02:01  [ main:2283 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:02:01  [ main:2284 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:02:01  [ main:2284 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:02:01  [ main:2284 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:02:01  [ main:2382 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:59 CST 2018]; root of context hierarchy
+2018-03-08 16:02:01  [ main:2416 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:59 CST 2018]; root of context hierarchy
+2018-03-08 16:02:01  [ main:2493 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:02:01  [ main:2494 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:02:01  [ main:2496 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:02:01  [ main:2497 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:59 CST 2018]; root of context hierarchy
+2018-03-08 16:02:01  [ main:2622 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:02:01  [ main:2622 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:02:01  [ main:2636 ] - [ INFO ]  FrameworkServlet '': initialization completed in 14 ms
+2018-03-08 16:02:02  [ main:2750 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:11:53  [ Thread-2:593849 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:01:59 CST 2018]; root of context hierarchy
+2018-03-08 16:11:58  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:11:58  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:11:58  [ main:143 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:11:58  [ main:155 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:11:58  [ main:164 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:11:58  [ main:358 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:11:58  [ main:481 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:11:58  [ main:570 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:11:58 CST 2018]; root of context hierarchy
+2018-03-08 16:11:59  [ main:914 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:11:59  [ main:1077 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:11:59  [ main:1079 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:11:59  [ main:1150 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:11:59  [ main:1413 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:11:59  [ main:1444 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:11:59  [ main:1680 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:12:00  [ main:2194 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:12:00  [ main:2324 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:12:00  [ main:2325 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:12:00  [ main:2325 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:12:00  [ main:2326 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:12:00  [ main:2326 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:12:00  [ main:2425 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:11:58 CST 2018]; root of context hierarchy
+2018-03-08 16:12:00  [ main:2461 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:11:58 CST 2018]; root of context hierarchy
+2018-03-08 16:12:00  [ main:2539 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:12:00  [ main:2541 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:12:00  [ main:2542 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:12:00  [ main:2544 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:11:58 CST 2018]; root of context hierarchy
+2018-03-08 16:12:00  [ main:2666 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:12:00  [ main:2666 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:12:00  [ main:2687 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 16:12:01  [ main:2800 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:14:12  [ Thread-2:134113 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:11:58 CST 2018]; root of context hierarchy
+2018-03-08 16:14:15  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:14:16  [ main:74 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:14:16  [ main:152 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:14:16  [ main:164 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:14:16  [ main:173 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:14:16  [ main:370 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:14:16  [ main:492 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:14:16  [ main:580 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:16 CST 2018]; root of context hierarchy
+2018-03-08 16:14:16  [ main:913 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:14:17  [ main:1077 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:14:17  [ main:1078 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:14:17  [ main:1149 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:14:17  [ main:1410 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:14:17  [ main:1440 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:14:17  [ main:1680 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:14:18  [ main:2214 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:14:18  [ main:2353 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:14:18  [ main:2353 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:14:18  [ main:2354 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:14:18  [ main:2354 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:14:18  [ main:2354 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:14:18  [ main:2454 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:16 CST 2018]; root of context hierarchy
+2018-03-08 16:14:18  [ main:2490 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:16 CST 2018]; root of context hierarchy
+2018-03-08 16:14:18  [ main:2570 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:14:18  [ main:2571 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:14:18  [ main:2573 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:14:18  [ main:2575 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:16 CST 2018]; root of context hierarchy
+2018-03-08 16:14:18  [ main:2703 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:14:18  [ main:2703 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:14:18  [ main:2724 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 16:14:18  [ main:2836 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:14:18  [ Thread-2:2927 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:16 CST 2018]; root of context hierarchy
+2018-03-08 16:14:28  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:14:28  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:14:28  [ main:149 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:14:28  [ main:163 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:14:28  [ main:172 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:14:29  [ main:364 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:14:29  [ main:486 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:14:29  [ main:572 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:29 CST 2018]; root of context hierarchy
+2018-03-08 16:14:29  [ main:898 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:14:29  [ main:1061 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:14:29  [ main:1062 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:14:29  [ main:1142 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:14:30  [ main:1402 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:14:30  [ main:1433 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:14:30  [ main:1665 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:14:30  [ main:2187 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:14:31  [ main:2320 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:14:31  [ main:2320 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:14:31  [ main:2321 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:14:31  [ main:2321 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:14:31  [ main:2321 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:14:31  [ main:2421 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:29 CST 2018]; root of context hierarchy
+2018-03-08 16:14:31  [ main:2456 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:29 CST 2018]; root of context hierarchy
+2018-03-08 16:14:31  [ main:2538 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:14:31  [ main:2540 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:14:31  [ main:2541 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:14:31  [ main:2543 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:29 CST 2018]; root of context hierarchy
+2018-03-08 16:14:31  [ main:2670 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:14:31  [ main:2670 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:14:31  [ main:2685 ] - [ INFO ]  FrameworkServlet '': initialization completed in 15 ms
+2018-03-08 16:14:31  [ main:2803 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:14:57  [ Thread-2:28343 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:14:29 CST 2018]; root of context hierarchy
+2018-03-08 16:15:17  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:15:17  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:15:17  [ main:147 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:15:17  [ main:159 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:15:17  [ main:167 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:15:18  [ main:360 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:15:18  [ main:480 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:15:18  [ main:568 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:15:18 CST 2018]; root of context hierarchy
+2018-03-08 16:15:18  [ main:902 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:15:18  [ main:1064 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:15:18  [ main:1066 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:15:18  [ main:1138 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:15:19  [ main:1397 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:15:19  [ main:1427 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:15:19  [ main:1663 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:15:19  [ main:2178 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@75c20c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:15:20  [ main:2311 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:15:20  [ main:2311 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:15:20  [ main:2312 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:15:20  [ main:2312 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:15:20  [ main:2313 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:15:20  [ main:2413 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:15:18 CST 2018]; root of context hierarchy
+2018-03-08 16:15:20  [ main:2448 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:15:18 CST 2018]; root of context hierarchy
+2018-03-08 16:15:20  [ main:2526 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:15:20  [ main:2528 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:15:20  [ main:2529 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:15:20  [ main:2531 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:15:18 CST 2018]; root of context hierarchy
+2018-03-08 16:15:20  [ main:2654 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:15:20  [ main:2654 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:15:20  [ main:2668 ] - [ INFO ]  FrameworkServlet '': initialization completed in 13 ms
+2018-03-08 16:15:20  [ main:2785 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:15:34  [ Thread-2:16836 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:15:18 CST 2018]; root of context hierarchy
+2018-03-08 16:21:04  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:21:04  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:21:04  [ main:152 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:21:04  [ main:164 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:21:04  [ main:173 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:21:04  [ main:377 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:21:04  [ main:503 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:21:04  [ main:597 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:21:04 CST 2018]; root of context hierarchy
+2018-03-08 16:21:04  [ main:933 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:21:05  [ main:1111 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:21:05  [ main:1112 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:21:05  [ main:1191 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:21:05  [ main:1459 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:21:05  [ main:1489 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:21:05  [ main:1722 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:21:06  [ main:2238 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3dec30] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:21:06  [ main:2370 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:21:06  [ main:2370 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:21:06  [ main:2371 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:21:06  [ main:2371 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:21:06  [ main:2372 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:21:06  [ main:2469 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:21:04 CST 2018]; root of context hierarchy
+2018-03-08 16:21:06  [ main:2503 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:21:04 CST 2018]; root of context hierarchy
+2018-03-08 16:21:06  [ main:2581 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:21:06  [ main:2583 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:21:06  [ main:2584 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:21:06  [ main:2586 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:21:04 CST 2018]; root of context hierarchy
+2018-03-08 16:21:06  [ main:2703 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:21:06  [ main:2703 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:21:06  [ main:2724 ] - [ INFO ]  FrameworkServlet '': initialization completed in 21 ms
+2018-03-08 16:21:06  [ main:2835 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:21:13  [ Thread-2:9010 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:21:04 CST 2018]; root of context hierarchy
+2018-03-08 16:35:23  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:35:23  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:35:23  [ main:160 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:35:23  [ main:174 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:35:23  [ main:184 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:35:24  [ main:393 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:35:24  [ main:520 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:35:24  [ main:611 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:35:24 CST 2018]; root of context hierarchy
+2018-03-08 16:35:24  [ main:954 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:35:24  [ main:1126 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:35:24  [ main:1127 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:35:24  [ main:1199 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:35:25  [ main:1460 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:35:25  [ main:1491 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:35:25  [ main:1727 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:35:25  [ main:2242 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3dec30] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:35:25  [ main:2373 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:35:25  [ main:2374 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:35:25  [ main:2374 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:35:25  [ main:2374 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:35:25  [ main:2375 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:35:26  [ main:2478 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:35:24 CST 2018]; root of context hierarchy
+2018-03-08 16:35:26  [ main:2511 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:35:24 CST 2018]; root of context hierarchy
+2018-03-08 16:35:26  [ main:2588 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:35:26  [ main:2589 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:35:26  [ main:2591 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:35:26  [ main:2592 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:35:24 CST 2018]; root of context hierarchy
+2018-03-08 16:35:26  [ main:2710 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:35:26  [ main:2711 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:35:26  [ main:2731 ] - [ INFO ]  FrameworkServlet '': initialization completed in 20 ms
+2018-03-08 16:35:26  [ main:2839 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:38:25  [ Thread-2:181608 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:35:24 CST 2018]; root of context hierarchy
+2018-03-08 16:46:08  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14f0d9c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400542, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@180cfdd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b85f9]
+2018-03-08 16:46:08  [ main:68 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-08 16:46:08  [ main:145 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-08 16:46:08  [ main:157 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-08 16:46:08  [ main:166 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:46:08  [ main:370 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-servlet.xml]
+2018-03-08 16:46:08  [ main:501 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-08 16:46:08  [ main:598 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:46:08 CST 2018]; root of context hierarchy
+2018-03-08 16:46:09  [ main:937 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-08 16:46:09  [ main:1101 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-08 16:46:09  [ main:1102 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-08 16:46:09  [ main:1175 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-08 16:46:09  [ main:1433 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-08 16:46:09  [ main:1463 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-08 16:46:09  [ main:1696 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-08 16:46:10  [ main:2207 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3dec30] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-08 16:46:10  [ main:2335 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-08 16:46:10  [ main:2336 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-08 16:46:10  [ main:2336 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-08 16:46:10  [ main:2337 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-08 16:46:10  [ main:2337 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-08 16:46:10  [ main:2434 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:46:08 CST 2018]; root of context hierarchy
+2018-03-08 16:46:10  [ main:2468 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:46:08 CST 2018]; root of context hierarchy
+2018-03-08 16:46:10  [ main:2544 ] - [ INFO ]  Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-08 16:46:10  [ main:2546 ] - [ INFO ]  Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-08 16:46:10  [ main:2547 ] - [ INFO ]  Mapped URL path [/image/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-08 16:46:10  [ main:2549 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:46:08 CST 2018]; root of context hierarchy
+2018-03-08 16:46:10  [ main:2668 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-08 16:46:10  [ main:2668 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-08 16:46:10  [ main:2688 ] - [ INFO ]  FrameworkServlet '': initialization completed in 20 ms
+2018-03-08 16:46:10  [ main:2796 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2018-03-08 16:46:11  [ Thread-2:2887 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@158b42f: startup date [Thu Mar 08 16:46:08 CST 2018]; root of context hierarchy

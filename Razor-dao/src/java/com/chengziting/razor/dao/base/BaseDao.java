@@ -33,10 +33,9 @@ import java.util.Map;
 public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao<TEntity,TId>{
     @Autowired
     private HibernateTemplate hibernateTemplate;
-//    @Autowired
-//    private JdbcTemplate      jdbcTemplate;
-//    @Autowired
-//    private SessionFactory sessionFactory;
+    @Autowired
+    private JdbcTemplate      jdbcTemplate;
+
     private static Logger logger ;
 
     public BaseDao(){
@@ -46,9 +45,9 @@ public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao
     public HibernateTemplate getHibernateTemplate(){
         return hibernateTemplate;
     }
-//    public JdbcTemplate getJdbcTemplate(){
-//        return jdbcTemplate;
-//    }
+    public JdbcTemplate getJdbcTemplate(){
+        return jdbcTemplate;
+    }
 
     protected Class<TEntity> getEntityType(){
         Class<TEntity> type = (Class<TEntity>)((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0];
@@ -84,10 +83,9 @@ public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao
     }
 
     public List<TEntity> getList() {
-//        Class<TEntity> type = getEntityType();
-//        System.out.println(type.getName());
-//        return getHibernateTemplate().loadAll(type);
-        return null;
+        Class<TEntity> type = getEntityType();
+        System.out.println(type.getName());
+        return getHibernateTemplate().loadAll(type);
     }
 
     public TId save(TEntity var1) {

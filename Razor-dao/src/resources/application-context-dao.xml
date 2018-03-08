@@ -37,19 +37,19 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-    <!--</bean>-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 
     <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
-    <!--<tx:advice id="transactionAdvice" transaction-manager="transactionManager">-->
-        <!--<tx:attributes>-->
-            <!--<tx:method name="save"/>-->
-            <!--<tx:method name="delete"/>-->
-            <!--<tx:method name="update"/>-->
-        <!--</tx:attributes>-->
-    <!--</tx:advice>-->
+    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save" rollback-for="java.lang.RuntimeException,com.chengziting.razor.core.exception.ServiceException"/>
+            <tx:method name="delete" rollback-for="java.lang.RuntimeException,com.chengziting.razor.core.exception.ServiceException"/>
+            <tx:method name="update" rollback-for="java.lang.RuntimeException,com.chengziting.razor.core.exception.ServiceException"/>
+        </tx:attributes>
+    </tx:advice>
 </beans>

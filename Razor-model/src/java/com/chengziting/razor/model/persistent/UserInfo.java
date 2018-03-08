@@ -2,10 +2,14 @@ package com.chengziting.razor.model.persistent;
 
 import com.chengziting.razor.model.system.GUIDGenerator;
 import com.sun.istack.internal.NotNull;
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.*;
 
 import javax.annotation.Generated;
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.util.List;
 
 /**
  * Created by user on 2018-01-16.
@@ -20,6 +24,8 @@ public class UserInfo extends BaseModel{
     private String email;
     private String qq;
     private int status;
+
+    private List<Roles> roles;
 
     @Id
     @GeneratedValue(generator = "uuid")
@@ -89,5 +95,17 @@ public class UserInfo extends BaseModel{
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "userrole",
+            joinColumns = {@JoinColumn(name = "UserId")},
+            inverseJoinColumns = {@JoinColumn(name = "RoleId")})
+    public List<Roles> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Roles> roles) {
+        this.roles = roles;
     }
 }

@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Razor.iml" filepath="$PROJECT_DIR$/Razor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Razor-Test/Razor-Test.iml" filepath="$PROJECT_DIR$/Razor-Test/Razor-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-core/Razor-core.iml" filepath="$PROJECT_DIR$/Razor-core/Razor-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-dao/Razor-dao.iml" filepath="$PROJECT_DIR$/Razor-dao/Razor-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-model/Razor-model.iml" filepath="$PROJECT_DIR$/Razor-model/Razor-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-service/Razor-service.iml" filepath="$PROJECT_DIR$/Razor-service/Razor-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Razor-test/Razor-test.iml" filepath="$PROJECT_DIR$/Razor-test/Razor-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-utils/Razor-utils.iml" filepath="$PROJECT_DIR$/Razor-utils/Razor-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/Razor-web/Razor-web.iml" filepath="$PROJECT_DIR$/Razor-web/Razor-web.iml" />
     </modules>
