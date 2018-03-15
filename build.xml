@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="buildRazor" basedir="." default="message">
+
+    <property environment="myenv"/>
+    <property name="razor.root" location="."/>
+    <property name="web_apps_root" location="D:/WebApps"/>
+
+    <property name="razor.web_or_api_working_dir" value=""/>
+
+
+    <target name="prepareCompileProperties">
+        <property name="javac.JAVA_HOME" value="${myenv.JAVA_HOME_8}"/>
+        <property name="javac.JRE_HOME" value="${myenv.JRE_HOME_8}"/>
+        <property name="javac.executable" value="${javac.JAVA_HOME}/bin/javac"/>
+        <property name="java.jvm" value="${javac.JAVA_HOME}/bin/java"/>
+
+        <property name="razor.core_dir" location="${razor.root}/Razor-core"/>
+        <property name="razor.utils_dir" location="${razor.root}/Razor-utils"/>
+        <property name="razor.model_dir" location="${razor.root}/Razor-model"/>
+        <property name="razor.dao_dir" location="${razor.root}/Razor-dao"/>
+        <property name="razor.service_dir" location="${razor.root}/Razor-service"/>
+        <property name="razor.web_dir" location="${razor.root}/Razor-web"/>
+        <property name="razor.api_dir" location="${razor.root}/Razor-api"/>
+
+        <property name="razor.razor_working_dir" value="${web_apps_root}/razor"/>
+        <property name="razor.razor_api_working_dir" value="${web_apps_root}/razorapi"/>
+
+        <property name="razor.javac_optimize" value="yes"/>
+    </target>
+
+    <target name="message" depends="prepareCompileProperties">
+        <echo message="JAVA_HOME      =${javac.JAVA_HOME}"/>
+        <echo message="JRE_HOME       =${javac.JRE_HOME}"/>
+        <echo message="CATALINA_HOME  =${myenv.CATALINA_HOME}"/>
+
+        <echo message="razor root path=${razor.root}"/>
+        <echo message="razor web or api working dir=${razor.web_or_api_working_dir}"/>
+    </target>
+
+    <target name="help">
+        <echo message="buildRazorWeb"/>
+        <echo message="buildRazorApi"/>
+        <echo message="stopTomcat"/>
+        <echo message="startTomcat"/>
+        <echo message="${razor.web_or_api_working_dir}"/>
+
+    </target>
+
+    <target name="buildRazorWeb" depends="prepareCompileProperties">
+        <echo message="start build razor web"/>
+        <delete dir="${razor.razor_working_dir}/WEB-INF" quiet="yes"/>
+        <copy todir="${razor.razor_working_dir}">
+            <fileset dir="${razor.root}/Razor-web/web">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <delete dir="${razor.razor_working_dir}/WEB-INF/classes" quiet="true"/>
+        <delete dir="${razor.razor_working_dir}/classes" quiet="true"/>
+        <mkdir dir="${razor.razor_working_dir}/WEB-INF/classes"/>
+        <mkdir dir="${razor.razor_working_dir}/classes"/>
+        <!--copy resource files(xml,properties)-->
+        <copy todir="${razor.razor_working_dir}/WEB-INF/classes">
+            <fileset dir="${razor.dao_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.service_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.model_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.web_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.utils_dir}/src/resources">
+                <include name="*.xml"/>
+                <include name="log4j.properties"/>
+            </fileset>
+        </copy>
+
+        <javac debug="false"
+               optimize="${razor.javac_optimize}"
+               destdir="${razor.razor_working_dir}/classes"
+               includeantruntime="no"
+               includejavaruntime="no"
+               executable="${javac.executable}"
+               fork="yes"
+               encoding="utf-8"
+               memorymaximumsize="512m">
+
+            <src>
+                <pathelement location="${razor.core_dir}/src"/>
+                <pathelement location="${razor.utils_dir}/src"/>
+                <pathelement location="${razor.model_dir}/src"/>
+                <pathelement location="${razor.dao_dir}/src"/>
+                <pathelement location="${razor.service_dir}/src"/>
+                <pathelement location="${razor.web_dir}/src"/>
+            </src>
+            <classpath>
+                <fileset dir="${javac.JRE_HOME}/lib">
+                    <include name="*.jar"/>
+                </fileset>
+                <fileset dir="${razor.root}/libs">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+        <!--copy jars-->
+        <mkdir dir="${razor.razor_working_dir}/WEB-INF/lib"/>
+        <copy todir="${razor.razor_working_dir}/WEB-INF/lib"
+              flatten="true">
+            <!--flatten=true:copy jar without folder-->
+            <fileset dir="${razor.root}/libs">
+                <include name="**/*.jar"/>
+                <exclude name="spring-test-*.jar"/>
+                <exclude name="mockito-*.jar"/>
+                <exclude name="junit-*.jar"/>
+            </fileset>
+        </copy>
+
+
+    </target>
+
+    <target name="buildRazorApi" depends="prepareCompileProperties">
+        <echo message="start build razor web"/>
+        <delete dir="${razor.razor_api_working_dir}/WEB-INF" quiet="yes"/>
+        <copy todir="${razor.razor_api_working_dir}">
+            <fileset dir="${razor.root}/Razor-api/web">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <delete dir="${razor.razor_api_working_dir}/WEB-INF/classes" quiet="true"/>
+        <delete dir="${razor.razor_api_working_dir}/classes" quiet="true"/>
+        <mkdir dir="${razor.razor_api_working_dir}/WEB-INF/classes"/>
+        <mkdir dir="${razor.razor_api_working_dir}/classes"/>
+        <!--copy resource files(xml,properties)-->
+        <copy todir="${razor.razor_api_working_dir}/WEB-INF/classes">
+            <fileset dir="${razor.dao_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.service_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.model_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.api_dir}/src/resources">
+                <include name="*.xml"/>
+            </fileset>
+            <fileset dir="${razor.utils_dir}/src/resources">
+                <include name="*.xml"/>
+                <include name="log4j.properties"/>
+            </fileset>
+        </copy>
+
+        <javac debug="false"
+               optimize="${razor.javac_optimize}"
+               destdir="${razor.razor_api_working_dir}/classes"
+               includeantruntime="no"
+               includejavaruntime="no"
+               executable="${javac.executable}"
+               fork="yes"
+               encoding="utf-8"
+               memorymaximumsize="512m">
+
+            <src>
+                <pathelement location="${razor.core_dir}/src"/>
+                <pathelement location="${razor.utils_dir}/src"/>
+                <pathelement location="${razor.model_dir}/src"/>
+                <pathelement location="${razor.dao_dir}/src"/>
+                <pathelement location="${razor.service_dir}/src"/>
+                <pathelement location="${razor.api_dir}/src"/>
+            </src>
+            <classpath>
+                <fileset dir="${javac.JRE_HOME}/lib">
+                    <include name="*.jar"/>
+                </fileset>
+                <fileset dir="${razor.root}/libs">
+                    <include name="**/*.jar"/>
+                    <exclude name="spring-test-*.jar"/>
+                    <exclude name="mockito-*.jar"/>
+                    <exclude name="junit-*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+        <!--copy jars-->
+        <mkdir dir="${razor.razor_api_working_dir}/WEB-INF/lib"/>
+        <copy todir="${razor.razor_api_working_dir}/WEB-INF/lib"
+              flatten="true">
+            <!--flatten=true:copy jar without folder-->
+            <fileset dir="${razor.root}/libs">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>
+
+    </target>
+
+    <target name="startTomcat">
+        <echo message="starting tomcat"/>
+        <exec executable="cmd" dir="${myenv.CATALINA_HOME}/bin" failonerror="false" append="true">
+            <env key="CATALINA_HOME" path="${myenv.CATALINA_HOME}"/>
+            <arg value="/c startup.bat"/>
+        </exec>
+    </target>
+
+    <target name="stopTomcat">
+        <echo message="stopping tomcat"/>
+        <exec executable="cmd" dir="${myenv.CATALINA_HOME}/bin" failonerror="false" append="true">
+            <env key="CATALINA_HOME" path="${myenv.CATALINA_HOME}"/>
+            <arg value="/c shutdown.bat"/>
+        </exec>
+    </target>
+
+    <target name="createJars" depends="prepareCompileProperties">
+        <mkdir dir="${razor.razor_working_dir}/jars"/>
+        <property name="razor_jar_name" value="${razor.razor_working_dir}/jars/Razor-web.jar"/>
+        <property name="razor_api_jar_name" value="${razor.razor_working_dir}/jars/Razor-api.jar"/>
+        <jar destfile="${razor_jar_name}">
+            <fileset dir="${razor.razor_working_dir}/classes">
+                <include name="**/*.class"/>
+            </fileset>
+        </jar>
+        <jar destfile="${razor_api_jar_name}">
+            <fileset dir="${razor.razor_api_working_dir}/classes">
+                <include name="**/*.class"/>
+            </fileset>
+        </jar>
+        <copy todir="${razor.razor_working_dir}/WEB-INF/lib" file="${razor_jar_name}"/>
+        <copy todir="${razor.razor_api_working_dir}/WEB-INF/lib" file="${razor_api_jar_name}"/>
+    </target>
+</project>

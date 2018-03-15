@@ -27,5 +27,6 @@ public interface IBaseService<TEntity extends BaseModel,TId> {
     boolean delete(List<TEntity> var1);
 
     boolean update(TEntity var1, TEntity var2);
+    void saveOrUpdate(TEntity entity);
     PagingModel getList(int startIndex, int pagingSize, Criterion[] filter);
 }

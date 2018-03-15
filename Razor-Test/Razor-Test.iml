@@ -26,5 +26,6 @@
     <orderEntry type="module" module-name="Razor-web" />
     <orderEntry type="library" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" name="junit-4.12" level="project" />
+    <orderEntry type="module" module-name="Razor-api" />
   </component>
 </module>

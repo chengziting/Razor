@@ -13,4 +13,10 @@
 
     <!--<bean id="roleDao" class="com.chengziting.razor.dao.impl.RolesDao"/>-->
 
+    <bean id="razorApi" class="com.chengziting.razor.utils.RazorApi">
+        <property name="apiUrl" value="http://localhost:28081"/>
+    </bean>
+
+    <bean id="httpRequester" class="com.chengziting.razor.utils.HttpRequester"></bean>
+
 </beans>

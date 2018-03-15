@@ -58,6 +58,7 @@ public class AdministratorController {
         ViewModel<List<SimpleRoleModel>> vm = new ViewModel<List<SimpleRoleModel>>();
         vm.setTitle("Role List");
         vm.setData(roleModelList);
+        vm.setRedirect("");
         return new Gson().toJson(vm);
     }
 }

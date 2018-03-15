@@ -56,6 +56,9 @@ public abstract class BaseService<TEntity extends BaseModel,TId> implements IBas
         return getDao().update(var1,var2);
     }
 
+    public void saveOrUpdate(TEntity entity){
+        getDao().saveOrUpdate(entity);
+    }
     public PagingModel getList(int startIndex, int pagingSize, Criterion[] filter) {
         return getDao().getList(startIndex,pagingSize,filter);
     }

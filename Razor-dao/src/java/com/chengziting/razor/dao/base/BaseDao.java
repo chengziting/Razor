@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -55,7 +56,9 @@ public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao
     }
 
     protected Session getSession(){
-        return getHibernateTemplate().getSessionFactory().getCurrentSession();
+        Session session = getHibernateTemplate().getSessionFactory().getCurrentSession();
+        
+        return session;
     }
 
     public TEntity get(TId tId) {
@@ -115,7 +118,19 @@ public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao
     }
 
     public boolean update(TEntity var1, TEntity var2) {
+
         return false;
+    }
+
+    public void saveOrUpdate(TEntity entity){
+        Session session = null;
+        try{
+            //entity.setUpdateDate(new Date());
+            session = getSession();
+            session.saveOrUpdate(entity);
+        }finally {
+            System.out.println("Session connection status:"+session.isConnected());
+        }
     }
 
     public PagingModel getList(int startIndex, int pagingSize, Criterion[] filter) {
