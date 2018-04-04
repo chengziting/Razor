@@ -1,9 +1,8 @@
 package com.chengziting.razor.dao.impl;
 
-import com.chengziting.razor.core.exception.ServiceException;
-import com.chengziting.razor.dao.IUserInfoDao;
+import com.chengziting.razor.dao.IUsersDao;
 import com.chengziting.razor.dao.base.BaseDao;
-import com.chengziting.razor.model.persistent.UserInfo;
+import com.chengziting.razor.model.persistent.Users;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,5 +12,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Repository
 @Transactional
-public class UserInfoDao extends BaseDao<UserInfo,String> implements IUserInfoDao {
+public class UsersDao extends BaseDao<Users,String> implements IUsersDao {
 }

@@ -20,6 +20,8 @@ import org.hibernate.Session;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.Date;
@@ -137,10 +139,14 @@ public abstract class BaseDao<TEntity extends BaseModel,TId> implements IBaseDao
         PagingModel pagingModel = new PagingModel();
 
         Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
         Criteria criteria = session.createCriteria(getEntityType());
+
         for(Criterion c : filter){
             criteria.add(c);
         }
+
+        criteria.add(Restrictions.eq("",""));
 
         long totalCount = (Long) criteria.setProjection(Projections.rowCount()).uniqueResult();
         criteria.setProjection(null);

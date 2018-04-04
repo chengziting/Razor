@@ -2089,3 +2089,99 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2018-03-13 14:52:29  [ main:2552 ] - [ INFO ]  FrameworkServlet '': initialization completed in 18 ms
 2018-03-13 14:52:29  [ main:2663 ] - [ WARN ]  HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
 2018-03-13 14:52:30  [ Thread-2:2890 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@3b5b47: startup date [Tue Mar 13 14:52:27 CST 2018]; root of context hierarchy
+2018-03-28 16:31:56  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a8564a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b472aa, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1368b99, org.springframework.test.context.support.DirtiesContextTestExecutionListener@125dc0f]
+2018-03-28 16:31:56  [ main:101 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-28 16:31:56  [ main:190 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-28 16:31:56  [ main:221 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-28 16:31:56  [ main:233 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-28 16:31:56  [ main:407 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-api-servlet.xml]
+2018-03-28 16:31:56  [ main:462 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:31:56 CST 2018]; root of context hierarchy
+2018-03-28 16:31:57  [ main:882 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-28 16:31:57  [ main:1042 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-28 16:31:57  [ main:1044 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-28 16:31:57  [ main:1111 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-28 16:31:57  [ main:1465 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-28 16:31:57  [ main:1492 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-28 16:31:58  [ main:1724 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-28 16:31:58  [ main:2273 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2be91c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-28 16:31:58  [ main:2414 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-28 16:31:58  [ main:2415 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-28 16:31:58  [ main:2415 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-28 16:31:58  [ main:2415 ] - [ INFO ]  Mapped "{[/account/doLogin],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doLogin(com.chengziting.razor.web.model.vm.LoginModel,javax.servlet.http.HttpServletRequest)
+2018-03-28 16:31:58  [ main:2416 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-28 16:31:58  [ main:2416 ] - [ INFO ]  Mapped "{[/captcha/captcha-image.htm]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.CaptchaController.createCaptcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-03-28 16:31:58  [ main:2417 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-28 16:31:58  [ main:2418 ] - [ INFO ]  Mapped "{[/api/account/test]}" onto public java.lang.String com.chengziting.razor.api.controller.AccountApiController.test(java.lang.String)
+2018-03-28 16:31:58  [ main:2418 ] - [ INFO ]  Mapped "{[/api/testapi/test],methods=[GET]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.test(java.lang.String)
+2018-03-28 16:31:58  [ main:2418 ] - [ INFO ]  Mapped "{[/api/testapi/testpost],methods=[POST]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.testPost(java.lang.String)
+2018-03-28 16:31:58  [ main:2514 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:31:56 CST 2018]; root of context hierarchy
+2018-03-28 16:31:58  [ main:2569 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:31:56 CST 2018]; root of context hierarchy
+2018-03-28 16:31:59  [ main:2623 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-03-28 16:31:59  [ main:2716 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-28 16:31:59  [ main:2716 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-28 16:31:59  [ main:2780 ] - [ INFO ]  FrameworkServlet '': initialization completed in 64 ms
+2018-03-28 16:31:59  [ Thread-2:3275 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:31:56 CST 2018]; root of context hierarchy
+2018-03-28 16:40:31  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a8564a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b472aa, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1368b99, org.springframework.test.context.support.DirtiesContextTestExecutionListener@125dc0f]
+2018-03-28 16:40:31  [ main:73 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-28 16:40:31  [ main:161 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-28 16:40:31  [ main:182 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-28 16:40:31  [ main:191 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-28 16:40:31  [ main:358 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-api-servlet.xml]
+2018-03-28 16:40:31  [ main:415 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:40:31 CST 2018]; root of context hierarchy
+2018-03-28 16:40:32  [ main:796 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-28 16:40:32  [ main:950 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-28 16:40:32  [ main:951 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-28 16:40:32  [ main:1017 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-28 16:40:32  [ main:1295 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-28 16:40:32  [ main:1322 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-28 16:40:32  [ main:1559 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-28 16:40:33  [ main:2119 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2be91c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-28 16:40:33  [ main:2262 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-28 16:40:33  [ main:2263 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-28 16:40:33  [ main:2263 ] - [ INFO ]  Mapped "{[/account/doLogin],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doLogin(com.chengziting.razor.web.model.vm.LoginModel,javax.servlet.http.HttpServletRequest)
+2018-03-28 16:40:33  [ main:2263 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-28 16:40:33  [ main:2264 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-28 16:40:33  [ main:2264 ] - [ INFO ]  Mapped "{[/captcha/captcha-image.htm]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.CaptchaController.createCaptcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-03-28 16:40:33  [ main:2265 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-28 16:40:33  [ main:2265 ] - [ INFO ]  Mapped "{[/api/account/test]}" onto public java.lang.String com.chengziting.razor.api.controller.AccountApiController.test(java.lang.String)
+2018-03-28 16:40:33  [ main:2266 ] - [ INFO ]  Mapped "{[/api/testapi/test],methods=[GET]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.test(java.lang.String)
+2018-03-28 16:40:33  [ main:2266 ] - [ INFO ]  Mapped "{[/api/testapi/testpost],methods=[POST]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.testPost(java.lang.String)
+2018-03-28 16:40:33  [ main:2364 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:40:31 CST 2018]; root of context hierarchy
+2018-03-28 16:40:33  [ main:2406 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:40:31 CST 2018]; root of context hierarchy
+2018-03-28 16:40:33  [ main:2457 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-03-28 16:40:33  [ main:2553 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-28 16:40:33  [ main:2554 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-28 16:40:33  [ main:2618 ] - [ INFO ]  FrameworkServlet '': initialization completed in 64 ms
+2018-03-28 16:40:34  [ Thread-2:2946 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:40:31 CST 2018]; root of context hierarchy
+2018-03-28 16:52:25  [ main:0 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a8564a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b472aa, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1368b99, org.springframework.test.context.support.DirtiesContextTestExecutionListener@125dc0f]
+2018-03-28 16:52:25  [ main:71 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-03-28 16:52:25  [ main:152 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-model.xml]
+2018-03-28 16:52:25  [ main:172 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-service.xml]
+2018-03-28 16:52:25  [ main:181 ] - [ INFO ]  Loading XML bean definitions from class path resource [application-context-dao.xml]
+2018-03-28 16:52:25  [ main:338 ] - [ INFO ]  Loading XML bean definitions from class path resource [dispatcher-api-servlet.xml]
+2018-03-28 16:52:25  [ main:397 ] - [ INFO ]  Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:52:25 CST 2018]; root of context hierarchy
+2018-03-28 16:52:26  [ main:747 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-03-28 16:52:26  [ main:897 ] - [ INFO ]  HHH000412: Hibernate Core {5.2.10.Final}
+2018-03-28 16:52:26  [ main:899 ] - [ INFO ]  HHH000206: hibernate.properties not found
+2018-03-28 16:52:26  [ main:948 ] - [ INFO ]  HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-28 16:52:26  [ main:1217 ] - [ INFO ]  HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-03-28 16:52:26  [ main:1243 ] - [ INFO ]  HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2018-03-28 16:52:26  [ main:1479 ] - [ WARN ]  HHH000065: DEPRECATED : use [org.hibernate.id.UUIDGenerator] instead with custom [org.hibernate.id.UUIDGenerationStrategy] implementation
+2018-03-28 16:52:27  [ main:2026 ] - [ INFO ]  Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2be91c] of Hibernate SessionFactory for HibernateTransactionManager
+2018-03-28 16:52:27  [ main:2164 ] - [ INFO ]  Mapped "{[/account/register]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.register()
+2018-03-28 16:52:27  [ main:2165 ] - [ INFO ]  Mapped "{[/account/login]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.AccountController.login()
+2018-03-28 16:52:27  [ main:2165 ] - [ INFO ]  Mapped "{[/account/doLogin],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doLogin(com.chengziting.razor.web.model.vm.LoginModel,javax.servlet.http.HttpServletRequest)
+2018-03-28 16:52:27  [ main:2166 ] - [ INFO ]  Mapped "{[/account/doRegister],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AccountController.doRegister(com.chengziting.razor.web.model.vm.RegisterModel,javax.servlet.http.HttpServletResponse) throws com.chengziting.razor.core.exception.ServiceException
+2018-03-28 16:52:27  [ main:2166 ] - [ INFO ]  Mapped "{[/admin/rolelist],methods=[POST]}" onto public java.lang.String com.chengziting.razor.web.controller.AdministratorController.getRoles()
+2018-03-28 16:52:27  [ main:2167 ] - [ INFO ]  Mapped "{[/captcha/captcha-image.htm]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.CaptchaController.createCaptcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-03-28 16:52:27  [ main:2167 ] - [ INFO ]  Mapped "{[/test/test1]}" onto public org.springframework.web.servlet.ModelAndView com.chengziting.razor.web.controller.TestController.test1()
+2018-03-28 16:52:27  [ main:2168 ] - [ INFO ]  Mapped "{[/api/account/test]}" onto public java.lang.String com.chengziting.razor.api.controller.AccountApiController.test(java.lang.String)
+2018-03-28 16:52:27  [ main:2169 ] - [ INFO ]  Mapped "{[/api/testapi/test],methods=[GET]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.test(java.lang.String)
+2018-03-28 16:52:27  [ main:2169 ] - [ INFO ]  Mapped "{[/api/testapi/testpost],methods=[POST]}" onto public java.lang.String com.chengziting.razor.api.controller.TestApiController.testPost(java.lang.String)
+2018-03-28 16:52:27  [ main:2265 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:52:25 CST 2018]; root of context hierarchy
+2018-03-28 16:52:27  [ main:2307 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:52:25 CST 2018]; root of context hierarchy
+2018-03-28 16:52:27  [ main:2359 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-03-28 16:52:27  [ main:2478 ] - [ INFO ]  Initializing Spring FrameworkServlet ''
+2018-03-28 16:52:27  [ main:2478 ] - [ INFO ]  FrameworkServlet '': initialization started
+2018-03-28 16:52:28  [ main:2506 ] - [ INFO ]  FrameworkServlet '': initialization completed in 28 ms
+2018-03-28 16:52:28  [ Thread-2:2818 ] - [ INFO ]  Closing org.springframework.web.context.support.GenericWebApplicationContext@1bd4fdd: startup date [Wed Mar 28 16:52:25 CST 2018]; root of context hierarchy

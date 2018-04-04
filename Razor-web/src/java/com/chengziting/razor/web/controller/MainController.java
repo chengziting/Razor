@@ -11,9 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("main")
 public class MainController {
 
-    public ModelAndView index(){
+    @RequestMapping("home")
+    public ModelAndView home(){
 
-        ModelAndView mv = new ModelAndView("/main/index");
+        ModelAndView mv = new ModelAndView("/main/home");
         return mv;
     }
 }

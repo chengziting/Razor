@@ -1,7 +1,7 @@
 package com.chengziting.razor.api.controller;
 
-import com.chengziting.razor.model.persistent.UserInfo;
-import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.model.persistent.Users;
+import com.chengziting.razor.service.IUsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +17,12 @@ import java.util.List;
 public class AccountApiController {
 
     @Autowired
-    private IUserInfoService userInfoService;
+    private IUsersService usersService;
 
     @RequestMapping("/test")
     @ResponseBody
     public String test(String p){
-        List<UserInfo> userInfoList = userInfoService.getList();
-        return "test "+userInfoList.get(0).getName();
+        List<Users> usersList = usersService.getList();
+        return "test "+ usersList.get(0).getName();
     }
 }

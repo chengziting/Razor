@@ -1,7 +1,6 @@
 package com.chengziting.razor.test;
 
-import com.chengziting.razor.model.persistent.UserInfo;
-import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.service.IUsersService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,8 +15,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-
-import java.util.List;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -39,7 +36,7 @@ public class testService extends AbstractJUnit4SpringContextTests{
     protected MockMvc mockMvc;
 
     @Autowired
-    protected IUserInfoService userInfoService;
+    protected IUsersService usersService;
 
     @Before
     public void setUp() {

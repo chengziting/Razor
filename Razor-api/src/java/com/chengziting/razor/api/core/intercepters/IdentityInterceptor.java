@@ -1,7 +1,7 @@
 package com.chengziting.razor.api.core.intercepters;
 
-import com.chengziting.razor.model.persistent.UserInfo;
-import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.model.persistent.Users;
+import com.chengziting.razor.service.IUsersService;
 import com.chengziting.razor.utils.common.IGlobalKey;
 import com.chengziting.razor.utils.common.SymmetricEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.io.PrintWriter;
  */
 public class IdentityInterceptor implements HandlerInterceptor {
     @Autowired
-    private IUserInfoService userInfoService;
+    private IUsersService usersService;
 
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         System.out.println("Start verify identity.");
@@ -43,7 +43,7 @@ public class IdentityInterceptor implements HandlerInterceptor {
         String originalValue = SymmetricEncoder.AESDncode(userCookieValue);
         String userName = originalValue.split(IGlobalKey.COOKIE_USER_LOGIN_SEPARATOR)[1];
         String password = originalValue.split(IGlobalKey.COOKIE_USER_LOGIN_SEPARATOR)[0];
-        UserInfo user = userInfoService.get(userName,password);
+        Users user = usersService.get(userName,password);
         if(user == null)
             return false;
         else return true;

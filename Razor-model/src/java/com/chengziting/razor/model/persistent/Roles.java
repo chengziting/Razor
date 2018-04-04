@@ -16,7 +16,7 @@ public class Roles extends BaseModel {
     private String id;
     private String name;
     private int status;
-    private List<UserInfo> users;
+    private List<Users> users;
 
     public void setId(String id){
         this.id = id;
@@ -48,11 +48,11 @@ public class Roles extends BaseModel {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "userrole",joinColumns = {@JoinColumn(name = "RoleId")},inverseJoinColumns = {@JoinColumn(name = "UserId")})
-    public List<UserInfo> getUsers() {
+    public List<Users> getUsers() {
         return users;
     }
 
-    public void setUsers(List<UserInfo> users) {
+    public void setUsers(List<Users> users) {
         this.users = users;
     }
 }

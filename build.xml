@@ -40,8 +40,12 @@
     <target name="help">
         <echo message="buildRazorWeb"/>
         <echo message="buildRazorApi"/>
+        <echo message="deployRazor"/>
+        <echo message="createJars"/>
         <echo message="stopTomcat"/>
         <echo message="startTomcat"/>
+
+        <echo message="replaceViews"/>
         <echo message="${razor.web_or_api_working_dir}"/>
 
     </target>
@@ -227,5 +231,17 @@
         </jar>
         <copy todir="${razor.razor_working_dir}/WEB-INF/lib" file="${razor_jar_name}"/>
         <copy todir="${razor.razor_api_working_dir}/WEB-INF/lib" file="${razor_api_jar_name}"/>
+    </target>
+
+    <target name="replaceViews" depends="prepareCompileProperties">
+        <delete dir="${razor.razor_working_dir}/WEB-INF/views" quiet="true"/>
+        <copy todir="${razor.razor_working_dir}/WEB-INF/views">
+            <fileset dir="${razor.web_dir}/web/WEB-INF/views">
+                <include name="**/*"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="deployRazor" depends="stopTomcat,buildRazorWeb,buildRazorApi,createJars,startTomcat">
     </target>
 </project>

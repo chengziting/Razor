@@ -1,4 +1,4 @@
-CREATE TABLE `razor`.`userinfo` (
+CREATE TABLE `razor`.`users` (
   `Id` varchar(36) NOT NULL ,
   `Name` VARCHAR(45) NOT NULL,
   `Password` VARCHAR(100) NOT NULL,
@@ -27,12 +27,12 @@ CREATE TABLE `razor`.`userinfo` (
 CREATE TABLE `userrole` (
   `Id` varchar(38) NOT NULL,
   `UserId` varchar(38) NOT NULL,
-  `RoeId` varchar(38) NOT NULL,
+  `RoleId` varchar(38) NOT NULL,
   `CreateDate` datetime DEFAULT CURRENT_TIMESTAMP,
   `UpdateDate` datetime DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `FK_ROLE_idx` (`RoeId`),
   KEY `FK_USERINFO_idx` (`UserId`),
   CONSTRAINT `FK_ROLE` FOREIGN KEY (`RoeId`) REFERENCES `roles` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `FK_USERINFO` FOREIGN KEY (`UserId`) REFERENCES `userinfo` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `FK_USERINFO` FOREIGN KEY (`UserId`) REFERENCES `users` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

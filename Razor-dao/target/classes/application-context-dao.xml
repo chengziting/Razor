@@ -16,7 +16,7 @@
         <property name="password" value="123456"/>
     </bean>
 
-    <bean id="sessionFactory" name="localSessionFactoryBean" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+    <bean id="sessionFactory" name="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <array>
@@ -52,4 +52,5 @@
             <tx:method name="update" rollback-for="java.lang.RuntimeException,com.chengziting.razor.core.exception.ServiceException"/>
         </tx:attributes>
     </tx:advice>
+
 </beans>

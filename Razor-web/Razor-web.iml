@@ -39,5 +39,7 @@
     <orderEntry type="module" module-name="Razor-model" />
     <orderEntry type="module" module-name="Razor-service" />
     <orderEntry type="module" module-name="Razor-utils" />
+    <orderEntry type="library" name="kaptcha-2.3" level="project" />
+    <orderEntry type="module" module-name="Razor-dao" />
   </component>
 </module>

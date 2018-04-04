@@ -1,6 +1,6 @@
 package com.chengziting.razor.test;
 
-import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.service.IUsersService;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ public class BaseTest extends AbstractJUnit4SpringContextTests{
     protected MockHttpServletResponse response;
 
     @Autowired
-    protected IUserInfoService userInfoService;
+    protected IUsersService userInfoService;
 
     @Before
     public void setUp() {

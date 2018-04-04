@@ -1,23 +1,19 @@
 package com.chengziting.razor.web.controller;
 
 import com.chengziting.razor.model.persistent.Roles;
-import com.chengziting.razor.model.persistent.UserInfo;
+import com.chengziting.razor.model.persistent.Users;
 import com.chengziting.razor.service.IRolesService;
-import com.chengziting.razor.service.IUserInfoService;
-import com.chengziting.razor.web.core.annotations.Administrator;
+import com.chengziting.razor.service.IUsersService;
 import com.chengziting.razor.web.model.ViewModel;
 import com.chengziting.razor.web.model.vm.SimpleRoleModel;
 import com.chengziting.razor.web.model.vm.SimpleUserInfoModel;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +26,7 @@ import java.util.List;
 public class AdministratorController {
 
     @Autowired
-    private IUserInfoService userInfoService;
+    private IUsersService usersService;
     @Autowired
     private IRolesService rolesService;
 
@@ -45,7 +41,7 @@ public class AdministratorController {
             model.setName(role.getName());
             model.setStatus(role.getStatus());
             List<SimpleUserInfoModel> userInRoleList = new ArrayList<SimpleUserInfoModel>();
-            for(UserInfo user : role.getUsers()){
+            for(Users user : role.getUsers()){
                 SimpleUserInfoModel userModel = new SimpleUserInfoModel();
                 userModel.setId(user.getId());
                 userModel.setName(user.getName());

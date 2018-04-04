@@ -1,6 +1,6 @@
 package com.chengziting.razor.api.controller;
 
-import com.chengziting.razor.service.IUserInfoService;
+import com.chengziting.razor.service.IUsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/api/testapi")
 public class TestApiController {
     @Autowired
-    private IUserInfoService userInfoService;
+    private IUsersService usersService;
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     @ResponseBody

@@ -15,8 +15,8 @@ import java.util.List;
  * Created by user on 2018-01-16.
  */
 @Entity
-@Table(name = "userinfo")
-public class UserInfo extends BaseModel{
+@Table(name = "users")
+public class Users extends BaseModel{
     private String id;
     private String name;
     private String password;
@@ -97,7 +97,7 @@ public class UserInfo extends BaseModel{
         this.status = status;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "userrole",
             joinColumns = {@JoinColumn(name = "UserId")},
             inverseJoinColumns = {@JoinColumn(name = "RoleId")})

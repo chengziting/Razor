@@ -1,10 +1,10 @@
 package com.chengziting.razor.web.core.interceptors;
 
+import com.chengziting.razor.service.IUsersService;
 import com.chengziting.razor.web.core.annotations.Administrator;
 import com.chengziting.razor.web.core.annotations.WithoutVerify;
-import com.chengziting.razor.model.persistent.UserInfo;
+import com.chengziting.razor.model.persistent.Users;
 import com.chengziting.razor.service.IRolesService;
-import com.chengziting.razor.service.IUserInfoService;
 import com.chengziting.razor.utils.common.IGlobalKey;
 import com.chengziting.razor.utils.common.SymmetricEncoder;
 import org.apache.log4j.Logger;
@@ -29,7 +29,7 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
     @Autowired
     private IRolesService roleService;
     @Autowired
-    private IUserInfoService userService;
+    private IUsersService userService;
 
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("AuthorizationInterceptor");
@@ -92,7 +92,7 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
         String originalValue = SymmetricEncoder.AESDncode(userCookie);
         String userName = originalValue.split(IGlobalKey.COOKIE_USER_LOGIN_SEPARATOR)[1];
         String password = originalValue.split(IGlobalKey.COOKIE_USER_LOGIN_SEPARATOR)[0];
-        UserInfo user = userService.get(userName,SymmetricEncoder.AESDncode(password));
+        Users user = userService.get(userName,SymmetricEncoder.AESDncode(password));
 
         logger.info("admin:"+userName);
     }

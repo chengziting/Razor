@@ -11,3 +11,6 @@
 
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap-3.3.7/dist/css/bootstrap.min.css" />
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8," data-href="../css/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+<script src="../css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>

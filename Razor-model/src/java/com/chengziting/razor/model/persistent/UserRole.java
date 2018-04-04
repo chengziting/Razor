@@ -21,7 +21,7 @@ public class UserRole extends BaseModel{
     @NotNull
     @JoinColumn(name = "UserId")
     @ManyToOne(fetch = FetchType.EAGER)
-    private UserInfo user;
+    private Users user;
     @NotNull
     @JoinColumn(name = "RoleId")
     @ManyToOne(fetch = FetchType.EAGER)
@@ -36,11 +36,11 @@ public class UserRole extends BaseModel{
         this.id = id;
     }
 
-    public UserInfo getUser() {
+    public Users getUser() {
         return user;
     }
 
-    public void setUser(UserInfo user) {
+    public void setUser(Users user) {
         this.user = user;
     }
 
