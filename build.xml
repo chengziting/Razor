@@ -242,6 +242,13 @@
         </copy>
     </target>
 
-    <target name="deployRazor" depends="stopTomcat,buildRazorWeb,buildRazorApi,createJars,startTomcat">
+    <target name="copyConfigXml" depends="prepareCompileProperties">
+    	<copy todir="${myenv.CATALINA_HOME}/conf/Catalina/localhost" file="${razor.root}/data/razor.xml" overwrite="true"/>
+    	<copy todir="${myenv.CATALINA_HOME}/conf/Catalina/localhost" file="${razor.root}/data/razorapi.xml" overwrite="true"/>
     </target>
+
+    <target name="deployRazor" depends="stopTomcat,buildRazorWeb,buildRazorApi,createJars,copyConfigXml,startTomcat">
+    </target>
+
+    
 </project>
